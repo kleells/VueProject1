@@ -1,3 +1,6 @@
-p {
-    color: purple;
+body {
+    font-family: sans-serif;
+    color: #40c98d;
+    background-color: #27394a;
+    padding: 5%;
 }
