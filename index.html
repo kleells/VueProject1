@@ -9,9 +9,26 @@
     <title>Vue Project</title>
   </head>
   <body>
-    <h1>Build Your First Vue Application</h1>
+    <!-- <h1>Build Your First Vue Application</h1>
+    <div id="firstVueApp">
+      {{ text }}
+    </div>
+    <script src="script.js"></script> -->
+
+    <!-- <h1>Build A Timer</h1>
+    <div id="firstVueApp">
+      {{ text }}
     <div id="timer">
       Timer: {{timer}}
+    </div> -->
+
+    <h1>Build Reactive Behavior with a Directive</h1>
+    <div id="to-hover-element">
+      <span v-bind:title="onHoverText">
+      <!-- v-bind:title changes text based on a specific action, in this case an alert box
+      reading Reactive Message appears two seconds after you hover over the below message -->
+        Hover over me to see a reactive title.
+      </span>
     </div>
     <script src="script.js"></script>
     </div>
