@@ -1,9 +1,14 @@
-const YourFirstVueApp = {
+const Timer = {
   data() {
     return {
-      text: "This is my first Vue application."
+      timer: 0
     }
+  },
+  mounted() {
+    setInterval(() => {
+      this.timer++
+    }, 1000)
   }
 }
 
-Vue.createApp(YourFirstVueApp).mount("#firstVueApp")
+Vue.createApp(Timer).mount("#timer")
