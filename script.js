@@ -5,7 +5,7 @@
 //     }
 //   }
 // }
-
+//
 // Vue.createApp(YourFirstVueApp).mount("#firstVueApp")
 
 // const Timer = {
@@ -20,14 +20,30 @@
 //     }, 1000)
 //   }
 // }
-
+//
 // Vue.createApp(Timer).mount("#timer")
 
-const ReactiveBehavior = {
+// const ReactiveBehavior = {
+//   data() {
+//     return {
+//       onHoverText: "Reactive message"
+//     }
+//   }
+// }
+//
+// Vue.createApp(ReactiveBehavior).mount("#to-hover-element")
+
+const UserInteraction = {
   data() {
     return {
-      onHoverText: "Reactive message"
+      text: "racecars"
+    }
+  },
+  methods: {
+    checkPalindrome() {
+      this.text = this.text.split("").reverse().join("")
     }
   }
 }
-Vue.createApp(ReactiveBehavior).mount("#to-hover-element")
+
+Vue.createApp(UserInteraction).mount("#textToReverse")

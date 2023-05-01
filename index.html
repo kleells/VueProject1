@@ -22,13 +22,21 @@
       Timer: {{timer}}
     </div> -->
 
-    <h1>Build Reactive Behavior with a Directive</h1>
+    <!-- <h1>Build Reactive Behavior with a Directive</h1>
     <div id="to-hover-element">
-      <span v-bind:title="onHoverText">
+      <span v-bind:title="onHoverText"> -->
       <!-- v-bind:title changes text based on a specific action, in this case an alert box
       reading Reactive Message appears two seconds after you hover over the below message -->
-        Hover over me to see a reactive title.
+        <!-- Hover over me to see a reactive title.
       </span>
+    </div> -->
+
+    <h1>Enable User Interaction with Vue.js</h1>
+    <div id="textToReverse">
+        <p> {{ text }}</p>
+        <button v-on:click="checkPalindrome">
+          Check if Palindrome
+        </button>
     </div>
     <script src="script.js"></script>
     </div>
