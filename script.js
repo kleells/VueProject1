@@ -33,17 +33,27 @@
 //
 // Vue.createApp(ReactiveBehavior).mount("#to-hover-element")
 
-const UserInteraction = {
+// const UserInteraction = {
+//   data() {
+//     return {
+//       text: "racecars"
+//     }
+//   },
+//   methods: {
+//     checkPalindrome() {
+//       this.text = this.text.split("").reverse().join("")
+//     }
+//   }
+// }
+
+// Vue.createApp(UserInteraction).mount("#textToReverse")
+
+const UserInput = {
   data() {
     return {
-      text: "racecars"
-    }
-  },
-  methods: {
-    checkPalindrome() {
-      this.text = this.text.split("").reverse().join("")
+      inputText: "Type here"
     }
   }
 }
 
-Vue.createApp(UserInteraction).mount("#textToReverse")
+Vue.createApp(UserInput).mount("#inputForm")
