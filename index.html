@@ -9,43 +9,74 @@
     <title>Vue Project</title>
   </head>
   <body>
-    <!-- <h1>Build Your First Vue Application</h1>
+    <h1>Multiple Vue Excercises</h1>
+    <p>Below are some expamples of how Vue.js can be used to make a website more interactive.
+      This code was built with a tutorial form Mammoth Interactive.</p>
+    <h2>Build Your First Vue Application</h2>
     <div id="firstVueApp">
       {{ text }}
     </div>
-    <script src="script.js"></script> -->
 
-    <!-- <h1>Build A Timer</h1>
-    <div id="firstVueApp">
-      {{ text }}
+
+    <h2>Build A Timer</h2>
     <div id="timer">
       Timer: {{timer}}
-    </div> -->
+    </div>
 
-    <!-- <h1>Build Reactive Behavior with a Directive</h1>
+    <h2>Build Reactive Behavior with a Directive</h2>
     <div id="to-hover-element">
-      <span v-bind:title="onHoverText"> -->
+      <span v-bind:title="onHoverText">
       <!-- v-bind:title changes text based on a specific action, in this case an alert box
       reading Reactive Message appears two seconds after you hover over the below message -->
-        <!-- Hover over me to see a reactive title.
+        Hover over me to see a reactive title.
       </span>
-    </div> -->
+    </div>
 
-    <!-- <h1>Enable User Interaction with Vue.js</h1>
+    <h2>Enable User Interaction with Vue.js</h2>
     <div id="textToReverse">
         <p> {{ text }}</p>
         <button v-on:click="checkPalindrome">
           Check if Palindrome
         </button>
     </div>
-    <script src="script.js"></script>
-    </div> -->
 
-<h1>Enable User Input with Vue.js</h1>
+<h2>Enable User Input with Vue.js</h2>
 <div id="inputForm">
   <p> {{ inputText }} </p>
   <input v-model="inputText" />
 </div>
+
+<h2>Hide or Show with conditionals</h2>
+<div id="conditionalVisibility">
+  <span v-if="visible">
+    Visible content
+  </span>
+</div>
+
+<h2>Build a List with Vue.js</h2>
+<div id="list">
+  <ol>
+    <li v-for="eachItem in listItems">
+      {{ eachItem.item }}
+    </li>
+  </ol>
+</div>
+
+<h2>Interpolate Text and HTML</h2>
+<div id="app">
+  <span v-html="html">
+</div>
+
+<h2>Data Properties</h2>
+<div id="app1">
+  <p>Examples from this exercise can be seen in the console in the form of numbers 0, 10000 and 5555</p>
+</div>
+
+<h2>Methods</h2>
+<div id="app2">
+  <p>Examples from this exercise can be seen in the console with the hellos being printed</p>
+</div>
+
 <script src="script.js"></script>
   </body>
 </html>
