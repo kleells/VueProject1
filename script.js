@@ -133,3 +133,12 @@ componentInstance.addToString()
 componentInstance.addToString()
 
 console.log(componentInstance.sampleString)
+
+app.component("submitButton", {
+  created() {
+    this.debounceCLick = _.debounce(this.click, 300)
+  },
+  unmounted() {
+    this.debounceClick.cancel()
+  }
+})
