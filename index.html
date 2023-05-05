@@ -40,50 +40,72 @@
         </button>
     </div>
 
-<h2>Enable User Input with Vue.js</h2>
-<div id="inputForm">
-  <p> {{ inputText }} </p>
-  <input v-model="inputText" />
-</div>
+    <h2>Enable User Input with Vue.js</h2>
+    <div id="inputForm">
+      <p> {{ inputText }} </p>
+      <input v-model="inputText" />
+    </div>
 
-<h2>Hide or Show with conditionals</h2>
-<div id="conditionalVisibility">
-  <span v-if="visible">
-    Visible content
-  </span>
-</div>
+    <h2>Hide or Show with conditionals</h2>
+    <div id="conditionalVisibility">
+      <span v-if="visible">
+        Visible content
+      </span>
+    </div>
 
-<h2>Build a List with Vue.js</h2>
-<div id="list">
-  <ol>
-    <li v-for="eachItem in listItems">
-      {{ eachItem.item }}
-    </li>
-  </ol>
-</div>
+    <h2>Build a List with Vue.js</h2>
+    <div id="list">
+      <ol>
+        <li v-for="eachItem in listItems">
+          {{ eachItem.item }}
+        </li>
+      </ol>
+    </div>
 
-<h2>Interpolate Text and HTML</h2>
-<div id="app">
-  <span v-html="html">
-</div>
+    <h2>Interpolate Text and HTML</h2>
+    <div id="app">
+      <span v-html="html">
+    </div>
 
-<h2>Data Properties</h2>
-<div id="app1">
-  <p>Examples from this exercise can be seen in the console in the form of numbers 0, 10000 and 5555</p>
-</div>
+    <h2>Data Properties</h2>
+    <div id="app1">
+      <p>Examples from this exercise can be seen in the console in the form of numbers 0, 10000 and 5555</p>
+    </div>
 
-<h2>Methods</h2>
-<div id="app2">
-  <p>Examples from this exercise can be seen in the console with the hellos being printed</p>
-</div>
+    <h2>Methods</h2>
+    <div id="app2">
+      <p>Examples from this exercise can be seen in the console with the hellos being printed</p>
+    </div>
 
-<h2>Data Properties</h2>
-<h3>Debouncing</h3>
-<script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
-<div id="">
-  <p>Debouncing is not required but it can improve performance</p>
-  <p>Debouncing forces a function to wait a certain amount of time before running again. Limits the number of times a function is called.</p>
-</div>
+    <h2>Data Properties</h2>
+    <h3>Debouncing</h3>
+    <script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
+    <div id="">
+      <p>Debouncing is not required but it can improve performance</p>
+      <p>Debouncing forces a function to wait a certain amount of time before running again. Limits the number of times a function is called.</p>
+    </div>
+
+    <h2>Loop Through a Range</h2>
+    <div id="loop-range">
+      <span v-for="number in 20">
+        {{ number }}
+        <br>
+      </span>
+    </div>
+
+    <h2>Loop Through an Array</h2>
+      <ol id="to-loop-list">
+        <li v-for="item in items">
+          {{ item.content }}
+        </li>
+      </ol>
+
+      <h2>Loop Through an Array with Index</h2>
+      <ol id="greeting-array">
+        <li v-for="(item, index) in greetings">
+          {{ index }} - {{item.content }}
+        </li>
+      </ol>
 
 <script src="script.js"></script>
   </body>

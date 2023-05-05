@@ -142,3 +142,28 @@ app.component("submitButton", {
     this.debounceClick.cancel()
   }
 })
+
+Vue.createApp({}).mount("#loop-range")
+
+Vue.createApp({
+  data() {
+    return {
+      items: [
+        { content: "Item here"},
+        { content: "Item there"}
+      ]
+    }
+  }
+}).mount("#to-loop-list")
+
+Vue.createApp({
+  data() {
+    return {
+      greetings: [
+        { content: "Hello"},
+        { content: "Hi"},
+        { content: "Hey"}
+      ]
+    }
+  }
+}).mount("#greeting-array")
