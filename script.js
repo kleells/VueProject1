@@ -167,3 +167,16 @@ Vue.createApp({
     }
   }
 }).mount("#greeting-array")
+
+Vue.createApp({
+  data() {
+    return {
+      sampleObject:{
+        title: "My Title",
+        author: "Author Name",
+        length: "Book Length",
+        genre: "Book Genre"
+      }
+    }
+  }
+}).mount("#object-values")
