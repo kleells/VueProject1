@@ -1,3 +1,4 @@
+// 1
 const YourFirstVueApp = {
   data() {
     return {
@@ -8,6 +9,7 @@ const YourFirstVueApp = {
 
 Vue.createApp(YourFirstVueApp).mount("#firstVueApp")
 
+// 2
 const Timer = {
   data() {
     return {
@@ -23,6 +25,7 @@ const Timer = {
 
 Vue.createApp(Timer).mount("#timer")
 
+// 3
 const ReactiveBehavior = {
   data() {
     return {
@@ -33,6 +36,7 @@ const ReactiveBehavior = {
 
 Vue.createApp(ReactiveBehavior).mount("#to-hover-element")
 
+// 4
 const UserInteraction = {
   data() {
     return {
@@ -48,6 +52,7 @@ const UserInteraction = {
 
 Vue.createApp(UserInteraction).mount("#textToReverse")
 
+// 5
 const UserInput = {
   data() {
     return {
@@ -58,6 +63,7 @@ const UserInput = {
 
 Vue.createApp(UserInput).mount("#inputForm")
 
+// 6
 const ConditionalVisibility = {
   data() {
     return {
@@ -68,6 +74,7 @@ const ConditionalVisibility = {
 
 Vue.createApp(ConditionalVisibility).mount("#conditionalVisibility")
 
+// 7
 const List   = {
   data() {
     return {
@@ -82,6 +89,7 @@ const List   = {
 
 Vue.createApp(List).mount("#list")
 
+// 8
 const InterpolateApp   = {
   data() {
     return {
@@ -92,6 +100,7 @@ const InterpolateApp   = {
 
 Vue.createApp(InterpolateApp).mount("#app")
 
+// 9 
 const intApp = Vue.createApp({
   data() {
     return {
@@ -109,7 +118,7 @@ console.log(appInstance.$data.value)
 appInstance.$data.value = 5555
 console.log(appInstance.value)
 
-
+// 10
 const app = Vue.createApp({
   data() {
     return {
@@ -134,6 +143,8 @@ componentInstance.addToString()
 
 console.log(componentInstance.sampleString)
 
+
+// 11
 app.component("submitButton", {
   created() {
     this.debounceCLick = _.debounce(this.click, 300)
@@ -143,8 +154,10 @@ app.component("submitButton", {
   }
 })
 
+// 12
 Vue.createApp({}).mount("#loop-range")
 
+// 13
 Vue.createApp({
   data() {
     return {
@@ -156,6 +169,7 @@ Vue.createApp({
   }
 }).mount("#to-loop-list")
 
+// 14
 Vue.createApp({
   data() {
     return {
@@ -168,6 +182,7 @@ Vue.createApp({
   }
 }).mount("#greeting-array")
 
+// 15
 Vue.createApp({
   data() {
     return {
@@ -180,3 +195,29 @@ Vue.createApp({
     }
   }
 }).mount("#object-values")
+
+// 16
+Vue.createApp({
+  data() {
+    return {
+      dogObject:{
+        breed: "Dachshund/Beagle",
+        ageInYears: 0.75,
+        owner: "Kallie",
+      }
+    }
+  }
+}).mount("#dog-list")
+
+// 17
+Vue.createApp({
+  data() {
+    return {
+      catObject:{
+        breed: "Tabby",
+        ageInYears: 13,
+        hungry: true
+      }
+    }
+  }
+}).mount("#cat-list")

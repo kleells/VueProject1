@@ -12,18 +12,18 @@
     <h1>Multiple Vue Excercises</h1>
     <p>Below are some expamples of how Vue.js can be used to make a website more interactive.
       This code was built with a tutorial form Mammoth Interactive.</p>
-    <h2>Build Your First Vue Application</h2>
+
+    <h2>1. Build Your First Vue Application</h2>
     <div id="firstVueApp">
       {{ text }}
     </div>
 
-
-    <h2>Build A Timer</h2>
+    <h2>2. Build A Timer</h2>
     <div id="timer">
       Timer: {{timer}}
     </div>
 
-    <h2>Build Reactive Behavior with a Directive</h2>
+    <h2>3. Build Reactive Behavior with a Directive</h2>
     <div id="to-hover-element">
       <span v-bind:title="onHoverText">
       <!-- v-bind:title changes text based on a specific action, in this case an alert box
@@ -32,7 +32,7 @@
       </span>
     </div>
 
-    <h2>Enable User Interaction with Vue.js</h2>
+    <h2>4. Enable User Interaction with Vue.js</h2>
     <div id="textToReverse">
         <p> {{ text }}</p>
         <button v-on:click="checkPalindrome">
@@ -40,20 +40,20 @@
         </button>
     </div>
 
-    <h2>Enable User Input with Vue.js</h2>
+    <h2>5. Enable User Input with Vue.js</h2>
     <div id="inputForm">
       <p> {{ inputText }} </p>
       <input v-model="inputText" />
     </div>
 
-    <h2>Hide or Show with conditionals</h2>
+    <h2>6. Hide or Show with conditionals</h2>
     <div id="conditionalVisibility">
       <span v-if="visible">
         Visible content
       </span>
     </div>
 
-    <h2>Build a List with Vue.js</h2>
+    <h2>7. Build a List with Vue.js</h2>
     <div id="list">
       <ol>
         <li v-for="eachItem in listItems">
@@ -62,22 +62,22 @@
       </ol>
     </div>
 
-    <h2>Interpolate Text and HTML</h2>
+    <h2>8. Interpolate Text and HTML</h2>
     <div id="app">
       <span v-html="html">
     </div>
 
-    <h2>Data Properties</h2>
+    <h2>9. Data Properties</h2>
     <div id="app1">
       <p>Examples from this exercise can be seen in the console in the form of numbers 0, 10000 and 5555</p>
     </div>
 
-    <h2>Methods</h2>
+    <h2>10. Methods</h2>
     <div id="app2">
       <p>Examples from this exercise can be seen in the console with the hellos being printed</p>
     </div>
 
-    <h2>Data Properties</h2>
+    <h2>11. Data Properties</h2>
     <h3>Debouncing</h3>
     <script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
     <div id="">
@@ -85,7 +85,7 @@
       <p>Debouncing forces a function to wait a certain amount of time before running again. Limits the number of times a function is called.</p>
     </div>
 
-    <h2>Loop Through a Range</h2>
+    <h2>12. Loop Through a Range</h2>
     <div id="loop-range">
       <span v-for="number in 20">
         {{ number }}
@@ -93,26 +93,40 @@
       </span>
     </div>
 
-    <h2>Loop Through an Array</h2>
+    <h2>13. Loop Through an Array</h2>
       <ol id="to-loop-list">
         <li v-for="item in items">
           {{ item.content }}
         </li>
       </ol>
 
-      <h2>Loop Through an Array with Index</h2>
+      <h2>14. Loop Through an Array with Index</h2>
       <ol id="greeting-array">
         <li v-for="(item, index) in greetings">
           {{ index }} - {{item.content }}
         </li>
       </ol>
 
-      <h2>Loop Through an Object</h2>
+      <h2>15. Loop Through an Object</h2>
         <ol id="object-values">
           <li v-for="value in sampleObject">
             {{ value }}
           </li>
         </ol>
+
+      <h2>16. Loop Through an Object and retrieve Value and Key</h2>
+        <ol id="dog-list">
+          <li v-for="(value, name) in dogObject">
+            {{ name }} : {{ value }}
+          </li>
+        </ol>
+
+      <h2>17. Loop Through Object Key and Index</h2>
+        <ul id="cat-list">
+          <li v-for="(value, name, index) in catObject">
+            {{ index }} - {{ name }}: {{ value }}
+          </li>
+        </ul>
 
 <script src="script.js"></script>
   </body>
