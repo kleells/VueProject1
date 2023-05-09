@@ -128,6 +128,21 @@
           </li>
         </ul>
 
+      <h2>18. Build An Input Field that prints Input as it's entered </h2>
+        <div id="form">
+          <label for="full-name">Full Name</label>
+          <input id="full-name" v-model="inputText" placeholder="Jane Doe"/>
+          <p> {{ inputText }} </p>
+
+          <h2>19. Build a Text Area</h2>
+            <p>Enter your question</p>
+            <p style="white-space:pre-line">
+              {{ textAreaContent }}
+            </p>
+            <textarea v-model="textAreaContent" placeholder="I have a question...">
+            </textarea>
+        </div>
+
 <script src="script.js"></script>
   </body>
 </html>

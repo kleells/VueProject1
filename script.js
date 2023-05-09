@@ -221,3 +221,13 @@ Vue.createApp({
     }
   }
 }).mount("#cat-list")
+
+// 18
+Vue.createApp({
+  data() {
+    return {
+      inputText: "",
+      textAreaContent: "",
+    }
+  }
+}).mount("#form")
