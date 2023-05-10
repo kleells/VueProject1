@@ -128,19 +128,53 @@
           </li>
         </ul>
 
-      <h2>18. Build An Input Field that prints Input as it's entered </h2>
+      <h2>18. Build A Form </h2>
         <div id="form">
+          <h3>Create a text Input field</h3>
           <label for="full-name">Full Name</label>
           <input id="full-name" v-model="inputText" placeholder="Jane Doe"/>
           <p> {{ inputText }} </p>
 
-          <h2>19. Build a Text Area</h2>
+          <h3>Build a Text Area</h3>
             <p>Enter your question</p>
-            <p style="white-space:pre-line">
-              {{ textAreaContent }}
-            </p>
-            <textarea v-model="textAreaContent" placeholder="I have a question...">
-            </textarea>
+              <p style="white-space:pre-line">
+                {{ textAreaContent }}
+              </p>
+              <textarea v-model="textAreaContent" placeholder="I have a question...">
+              </textarea>
+          <h3>Build a Drop Down</h3>
+            <p>How did you hear about us?</p>
+              <select v-model="selected">
+                <option v-for="option in options" v-bind:value="option.value">
+                  {{ option.text }}
+                </option>
+              </select>
+            <span>{{ selected }}</span>
+          <h3>Build Checkboxes</h3>
+              <p>Who is this message for?</p>
+                <input type="checkbox" id="questions" value="Questions Team" v-model="checkedOptions" />
+                <label for="questions">Questions Team</label>
+                <br/>
+                <input type="checkbox" id="comments" value="Comments Team" v-model="checkedOptions" />
+                <label for="comments">Comments Team</label>
+                <br/>
+                <input type="checkbox" id="head-office" value="Head Office" v-model="checkedOptions" />
+                <label for="head-office">Head Office</label>
+                <br/>
+              <span>Selected: {{ checkedOptions }}</span>
+            <h3>Build Radio Buttons</h3>
+              <p>What are you inquiring about?
+              </p>
+                <input type="radio" id="courses" value="Courses" v-model="radioButtonPicked" />
+                <label for="courses">Course</label>
+                <br/>
+                <input type="radio" id="books" value="Books" v-model="radioButtonPicked" />
+                <label for="books">Books</label>
+                <br/>
+                <input type="radio" id="games" value="Games" v-model="radioButtonPicked" />
+                <label for="games">Games</label>
+                <br/>	
+              <span>Chosen: {{ radioButtonPicked }}</span>
         </div>
 
 <script src="script.js"></script>
